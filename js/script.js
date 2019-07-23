@@ -13,7 +13,6 @@ const shuffle = (array) => {
 
 
 $(document).ready(function() {
-
     $('.name-text').hide().show().addClass('fadeInUp');
     setTimeout(() => {
         $('.recent-updates').hide().show().addClass('fadeInUp');
@@ -55,6 +54,7 @@ let is_one_visible = false;
 let the_visible_one;
 
 $(window).scroll(() => {
+
     const lower = window.screen.width <= 600 ? 50 : 170;
     const higher = window.screen.width <= 600 ? 450 : 475;
     $('.community-descriptions').each((_, elem) => {
@@ -77,6 +77,22 @@ $(window).scroll(() => {
         if ($(`#${sec_name}`).offset().top - $(window).scrollTop() <= 400) {
             $(`#${sec_name}`).addClass('fadeInUp');
         }
+    });
+
+
+    var $target = $('.projects');
+    inView.offset(window.innerHeight * 0.6 / 2);
+    inView('#hacks-section').on('enter', function(el) {
+        $target.css('background-color', '#ffc386');
+        $('.projects>div>div>div>div>a').css('color', '#8786ff');
+    });
+    inView('#others-section').on('enter', function(el) {
+        $('.projects>div>div>div>div>a').css('color', '#86ffff');
+        $target.css('background-color', '#ff86c3');
+    });
+    inView('#teaching-section').on('enter', function(el) {
+        $('.projects>div>div>div>div>a').css('color', '#86ffff');
+        $target.css('background-color', '#ff8686');
     });
 });
 

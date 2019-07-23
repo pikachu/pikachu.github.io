@@ -68,6 +68,8 @@ img:hover {
     transform: scale(1.02);
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
     transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+
 }
 
 .teams:before {
@@ -88,6 +90,7 @@ img:hover {
     padding-bottom: 3rem;
     padding-top: 11.5rem;
     transition: opacity .3s ease;
+    -webkit-transition: opacity 0.3s ease;
 }
 
 img {
@@ -151,6 +154,9 @@ img {
     padding-top: 11.5rem;
     transition: opacity .3s ease;
     background-color: #FF8686;
+    transition: background 0.3s ease;
+    -webkit-transition: background 0.3s ease;
+
 }
 
 .projects:before {
@@ -228,7 +234,7 @@ ul {
 }
 
 .links:before {
-    background-image: linear-gradient(to bottom left, #FF8686 0, #FF8686 50%, #fff 0, #fff);
+    background-image: linear-gradient(to bottom left, #ff86c3 0, #ff86c3 50%, #fff 0, #fff);
     content: " ";
     height: 10rem;
     left: 0;
@@ -244,6 +250,7 @@ ul {
     padding-top: 11.5rem;
     color: #4A4A4A;
     transition: opacity .3s ease;
+    -webkit-transition: opacity 0.3s ease;
 }
 
 .links-contact-text {
@@ -264,6 +271,8 @@ ul.link-list>li {
 }
 
 a {
+    -webkit-transition: color 0.3s ease;
+    transition: color 0.3s ease;
     text-decoration: none;
     color: #86c3ff;
 }
