@@ -96,7 +96,13 @@ img {
 }
 
 .team-date-text {
-    padding-top: 10px;
+    font-family: PTSans-Regular;
+    font-size: 0.75em;
+    letter-spacing: 0.56px;
+}
+
+.team-role-text {
+    padding-top: 5px;
     font-family: PTSans-Regular;
     font-size: 0.75em;
     letter-spacing: 0.56px;
@@ -160,7 +166,7 @@ img {
 
 .project-subject {
     font-family: PlayfairDisplay-Regular;
-    font-size: 1.5em;
+    font-size: 1.8em;
     letter-spacing: 0.56px;
     padding-top: 80px;
 }
@@ -200,7 +206,7 @@ ul {
 }
 
 .hack-title {
-    padding-top: 30px;
+    padding-top: 60px;
     font-family: PlayfairDisplay-Regular;
     font-size: 1em;
     letter-spacing: 0.38px;
@@ -216,9 +222,9 @@ ul {
 .hack-description {
     padding-top: 5px;
     font-family: PTSans-Regular;
-    font-size: 0.75em;
+    font-size: 1em;
     letter-spacing: 0.38px;
-    line-height: 1.125rem;
+    line-height: 1.7rem;
 }
 
 .links:before {
@@ -243,7 +249,7 @@ ul {
 .links-contact-text {
     padding-top: 40px;
     padding-bottom: 20px;
-    font-family: SourceSansPro-Regular;
+    font-family: PTSans-Regular;
     font-size: 1.5em;
     letter-spacing: 0.56px;
 }
@@ -252,12 +258,12 @@ ul {
 ul.link-list>li {
     margin: 20px 0;
     letter-spacing: 0.56px;
-    font-family: SourceSansPro-Regular;
+    font-family: PTSans-Regular;
     font-size: 1.5em;
 
 }
 
 a {
     text-decoration: none;
-    color: #4A90E2;
+    color: #86c3ff;
 }
