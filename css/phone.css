@@ -1,0 +1,13 @@
+@media only screen and (max-width: 600px) {
+    #recent-update-text {
+        height: 10vh;
+    }
+
+    .team-row>div:first-of-type {
+        padding-bottom: 9vh;
+    }
+
+    .community-descriptions {
+        padding-top: 3vh;
+    }
+}
