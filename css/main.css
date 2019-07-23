@@ -26,12 +26,12 @@ html {
 
 .title {
     font-size: 2.25em;
-    font-family: PlayfairDisplay-Regular;
+    font-family: 'Playfair Display', serif;
     letter-spacing: 0.56px;
 }
 
 .recent-update-title {
-    font-family: PlayfairDisplay-Bold;
+    font-family: 'Playfair Display', serif;
     font-size: 0.75em;
     letter-spacing: 0.56px;
     padding-top: 30px;
@@ -39,7 +39,7 @@ html {
 
 #recent-update-text {
     padding-top: 5px;
-    font-family: PTSans-Regular;
+    font-family: 'PT Sans', sans-serif;
     font-size: 1.125em;
     color: #919191;
     letter-spacing: 0.45px;
@@ -52,7 +52,7 @@ html {
 }
 
 .nav-block {
-    font-family: PlayfairDisplay-Regular;
+    font-family: 'Playfair Display', serif;
     padding-top: 20px;
     font-size: 1.5em;
     opacity: 0.6;
@@ -99,14 +99,14 @@ img {
 }
 
 .team-date-text {
-    font-family: PTSans-Regular;
+    font-family: 'PT Sans', sans-serif;
     font-size: 0.75em;
     letter-spacing: 0.56px;
 }
 
 .team-role-text {
     padding-top: 5px;
-    font-family: PTSans-Regular;
+    font-family: 'PT Sans', sans-serif;
     font-size: 0.75em;
     letter-spacing: 0.56px;
 }
@@ -140,7 +140,7 @@ img {
 
 .community-tile {
     padding-top: 80px;
-    font-family: PTSans-Regular;
+    font-family: 'PT Sans', sans-serif;
     font-size: 1.25em;
     color: #676767;
     letter-spacing: 0.3px;
@@ -171,7 +171,7 @@ img {
 }
 
 .project-subject {
-    font-family: PlayfairDisplay-Regular;
+    font-family: 'Playfair Display', serif;
     font-size: 1.8em;
     letter-spacing: 0.56px;
     padding-top: 80px;
@@ -180,7 +180,7 @@ img {
 .project-teaching-helper {
     padding-top: 20px;
     font-size: 1.25em;
-    font-family: PTSans-Regular;
+    font-family: 'PT Sans', sans-serif;
     letter-spacing: 0.47px;
 }
 
@@ -190,7 +190,7 @@ img {
 
 li {
     margin: 10px 0;
-    font-family: PTSans-Italic;
+    font-family: 'PT Sans', sans-serif;
     font-size: 1.5em;
     letter-spacing: 0.56px;
 }
@@ -208,18 +208,19 @@ ul {
 .teaching-description-text {
     margin: 20px;
     color: #4A4A4A;
-    font-family: PTSans-Regular;
+    font-family: 'PT Sans', sans-serif;
 }
 
 .hack-title {
     padding-top: 60px;
-    font-family: PlayfairDisplay-Regular;
+    font-family: 'Playfair Display', serif;
     font-size: 1em;
     letter-spacing: 0.38px;
 }
 
 .hack-date {
-    font-family: PTSans-Bold;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 700;
     font-size: 0.75em;
     padding-top: 5px;
     letter-spacing: 0.38px;
@@ -227,7 +228,7 @@ ul {
 
 .hack-description {
     padding-top: 5px;
-    font-family: PTSans-Regular;
+    font-family: 'PT Sans', sans-serif;
     font-size: 1em;
     letter-spacing: 0.38px;
     line-height: 1.7rem;
@@ -256,7 +257,7 @@ ul {
 .links-contact-text {
     padding-top: 40px;
     padding-bottom: 20px;
-    font-family: PTSans-Regular;
+    font-family: 'PT Sans', sans-serif;
     font-size: 1.5em;
     letter-spacing: 0.56px;
 }
@@ -265,7 +266,7 @@ ul {
 ul.link-list>li {
     margin: 20px 0;
     letter-spacing: 0.56px;
-    font-family: PTSans-Regular;
+    font-family: 'PT Sans', sans-serif;
     font-size: 1.5em;
 
 }
