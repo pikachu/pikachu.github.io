@@ -22,32 +22,25 @@ $(document).ready(function() {
     }, 3000)
     let i = 0;
     const time_on_screen = 6000;
-    const time_in_between = 1000;
+    const time_in_between = 400;
     const shuffled_updates = shuffle(recent_updates);
     setTimeout(() => {
         $('#recent-update-content').text(shuffled_updates[i]['update']);
         $('#recent-update-date').text(shuffled_updates[i]['date']);
         $('#recent-update-text').hide().show().addClass('fadeInRight');
         i += 1;
-        i = i % 4;
-        setTimeout(() => {
+        setInterval(() => {
             $('#recent-update-text').removeClass('fadeInRight');
             $('#recent-update-text').addClass('fadeOutRight');
-        }, time_on_screen);
-    }, 2000);
-    setTimeout(() => {
-        setInterval(() => {
-            $('#recent-update-content').text(shuffled_updates[i]['update']);
-            $('#recent-update-date').text(shuffled_updates[i]['date']);
-            $('#recent-update-text').hide().show().addClass('fadeInRight');
-            i += 1;
-            i = i % 4;
             setTimeout(() => {
-                $('#recent-update-text').removeClass('fadeInRight');
-                $('#recent-update-text').addClass('fadeOutRight');
-            }, time_on_screen);
+                $('#recent-update-content').text(shuffled_updates[i]['update']);
+                $('#recent-update-date').text(shuffled_updates[i]['date']);
+                $('#recent-update-text').hide().show().addClass('fadeInRight');
+                i += 1;
+                i = i % 4;
+            }, time_in_between);
         }, time_on_screen + time_in_between);
-    }, 1000);
+    }, 2000);
 });
 
 let is_one_visible = false;
@@ -111,15 +104,17 @@ $('a[href*="#"]').on('click', function(e) {
 const recent_updates = [{
         'update': 'took a documentary filmmaking class at New York University’s Tisch School of Arts',
         'date': 'summer 2019'
-    }, {
+    },
+    {
         'update': 'accepted a job to be a software engineer at Robinhood Markets starting September 2019',
         'date': 'november 2018'
     },
     {
         'update': 'began work on a music project🎶',
         'date': 'fall 2018'
-    }, {
-        'update': 'awarded the Corporate Partners Program Scholarship and the John D. Gannon Endowed Scholarship by UMD\'s CS department',
-        'date': 'summer 2018'
+    },
+    {
+        'update': 'travelled to slovenia, croatia, and italy with my family',
+        'date': 'summer 2019'
     }
 ];

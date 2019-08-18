@@ -100,19 +100,18 @@ img {
 
 .team-date-text {
     font-family: 'PT Sans', sans-serif;
-    font-size: 0.75em;
     letter-spacing: 0.56px;
 }
 
 .team-role-text {
     padding-top: 5px;
     font-family: 'PT Sans', sans-serif;
-    font-size: 0.75em;
     letter-spacing: 0.56px;
 }
 
 .team-row {
     padding-top: 60px;
+    font-size: 0.9em;
 }
 
 .communities:before {
@@ -152,10 +151,11 @@ img {
     position: relative;
     padding-bottom: 8rem;
     padding-top: 11.5rem;
-    transition: opacity .3s ease;
     background-color: #FF8686;
-    transition: background 0.3s ease;
-    -webkit-transition: background 0.3s ease;
+    transition: background-color 0.8s ease;
+    -moz-transition: background-color 0.8s ease;
+    -webkit-transition: background-color 0.8s ease;
+    -ms-transition: background-color 0.8s ease;
 
 }
 
