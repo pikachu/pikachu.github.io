@@ -45,6 +45,7 @@ $(document).ready(function() {
 
 let is_one_visible = false;
 let the_visible_one;
+let current = 0;
 
 $(window).scroll(() => {
 
@@ -76,16 +77,25 @@ $(window).scroll(() => {
     var $target = $('.projects');
     inView.offset(window.innerHeight * 0.6 / 2);
     inView('#hacks-section').on('enter', function(el) {
-        $target.css('background-color', '#ffc386');
-        $('.projects>div>div>div>div>a').css('color', '#8786ff');
+        if (current != 0) {
+            $target.css('background-color', '#ffc386');
+            $('.projects>div>div>div>div>a').css('color', '#8786ff');
+            current = 0;
+        }
     });
     inView('#others-section').on('enter', function(el) {
-        $('.projects>div>div>div>div>a').css('color', '#86ffff');
-        $target.css('background-color', '#ff86c3');
+        if (current != 1) {
+            $('.projects>div>div>div>div>a').css('color', '#86ffff');
+            $target.css('background-color', '#ff86c3');
+            current = 1;
+        }
     });
     inView('#teaching-section').on('enter', function(el) {
-        $('.projects>div>div>div>div>a').css('color', '#86ffff');
-        $target.css('background-color', '#ff8686');
+        if (current != 2) {
+            $('.projects>div>div>div>div>a').css('color', '#86ffff');
+            $target.css('background-color', '#ff8686');
+            current = 2
+        }
     });
 });
 
