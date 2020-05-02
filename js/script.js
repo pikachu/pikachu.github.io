@@ -11,8 +11,7 @@ const shuffle = (array) => {
     return array;
 }
 
-
-$(window).ready(function() {
+$(window).on('load', function() {
     $('.name-text').hide().show().addClass('fadeInUp');
     setTimeout(() => {
         $('.recent-updates').hide().show().addClass('fadeInUp');
