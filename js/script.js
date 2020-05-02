@@ -116,15 +116,15 @@ const recent_updates = [{
         'date': 'summer 2019'
     },
     {
-        'update': 'accepted a job to be a software engineer at Robinhood Markets starting September 2019',
-        'date': 'november 2018'
+        'update': 'began work on the uk expansion team at robinhood markets',
+        'date': 'september 2019'
     },
     {
-        'update': 'began work on a music project🎶',
-        'date': 'fall 2018'
+        'update': 'experienced true sichuan cuisine for the first time',
+        'date': 'november 2019',
     },
     {
-        'update': 'travelled to slovenia, croatia, and italy with my family',
-        'date': 'summer 2019'
-    }
+        'update': 'absolutely shattered my iphone screen',
+        'date': 'january 2020',
+    },
 ];
