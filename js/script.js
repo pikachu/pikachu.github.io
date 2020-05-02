@@ -39,7 +39,7 @@ $(window).on('load', function() {
                 i = i % 4;
             }, time_in_between);
         }, time_on_screen + time_in_between);
-    }, 2000);
+    }, 0);
 });
 
 let is_one_visible = false;
