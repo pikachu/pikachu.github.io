@@ -12,7 +12,7 @@ const shuffle = (array) => {
 }
 
 
-$(document).ready(function() {
+$(window).ready(function() {
     $('.name-text').hide().show().addClass('fadeInUp');
     setTimeout(() => {
         $('.recent-updates').hide().show().addClass('fadeInUp');
