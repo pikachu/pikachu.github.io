@@ -11,7 +11,7 @@ const shuffle = (array) => {
     return array;
 }
 
-$(window).on('load', function() {
+$(window).on('load', function () {
     $('.name-text').hide().show().addClass('fadeInUp');
     setTimeout(() => {
         $('.recent-updates').hide().show().addClass('fadeInUp');
@@ -75,21 +75,21 @@ $(window).scroll(() => {
 
     var $target = $('.projects');
     inView.offset(window.innerHeight * 0.6 / 2);
-    inView('#hacks-section').on('enter', function(el) {
+    inView('#hacks-section').on('enter', function (el) {
         if (current != 0) {
             $target.css('background-color', '#ffc386');
             $('.projects>div>div>div>div>a').css('color', '#8786ff');
             current = 0;
         }
     });
-    inView('#others-section').on('enter', function(el) {
+    inView('#others-section').on('enter', function (el) {
         if (current != 1) {
             $('.projects>div>div>div>div>a').css('color', '#86ffff');
             $target.css('background-color', '#ff86c3');
             current = 1;
         }
     });
-    inView('#teaching-section').on('enter', function(el) {
+    inView('#teaching-section').on('enter', function (el) {
         if (current != 2) {
             $('.projects>div>div>div>div>a').css('color', '#86ffff');
             $target.css('background-color', '#ff8686');
@@ -98,32 +98,37 @@ $(window).scroll(() => {
     });
 });
 
-$('a[href*="#"]').on('click', function(e) {
+$('a[href*="#"]').on('click', function (e) {
     e.preventDefault()
     const section_name = $(this).attr('href').substring(1);
     const section_top = $(`.${section_name}`).first().offset().top
     $('html, body').animate({
-            scrollTop: section_top,
-        },
+        scrollTop: section_top,
+    },
         500,
         'swing'
     )
 });
 
-const recent_updates = [{
-        'update': 'took a documentary filmmaking class at New York University’s Tisch School of Arts',
-        'date': 'summer 2019'
+const recent_updates = [
+    {
+        'update': 'completed kirsty godso\'s burn program',
+        'date': 'june 2021',
     },
     {
-        'update': 'began work on the uk expansion team at robinhood markets',
-        'date': 'september 2019'
+        'update': 'moved to hawaii for the summer',
+        'date': 'june 2021',
     },
     {
-        'update': 'experienced true sichuan cuisine for the first time',
-        'date': 'november 2019',
+        'update': 'launched solaclean.me to help americans have better breath',
+        'date': 'may 2021',
     },
     {
-        'update': 'absolutely shattered my iphone screen',
-        'date': 'january 2020',
+        'update': 'started learning how to snowboard',
+        'date': 'february 2021',
+    },
+    {
+        'update': 'my hair has grown really f*cking long',
+        'date': '2020 - 2021',
     },
 ];
